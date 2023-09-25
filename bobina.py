@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 # corriente = [valor1, valor2, valor3]
 
 
-cobre = {'resistividad': 1, 'grosor': 1e-3}
-
+cobre = {'resistividad': 1.68e-8, 'grosor': 1e-3}
 
 
 def campo_magnetico(material, N, V, r, L):
@@ -18,15 +17,16 @@ def campo_magnetico(material, N, V, r, L):
     R = rho*Lb/At
     I = V/R
     B = mu_0*I*N/L
-    return B
+    return I, B
 
 # N: Número de vueltas
 # V: Voltaje
 # r: Radio de la bobina o espira
 # L = Longitud de la bobina
 
-N = 250
-V = 3
-r = 10e-2
-L = 30e-2
+N = 230
+V = 6.5
+r = 8.5e-2
+L = 28.5e-2
+
 print(campo_magnetico(cobre, N, V, r, L))
