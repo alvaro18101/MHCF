@@ -1,11 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# corriente = [valor1, valor2, valor3]
-
-
 cobre = {'resistividad': 1.68e-8, 'grosor': 1e-3}
-
 
 def campo_magnetico(material, N, V, r, L):
     mu_0 = 4*np.pi*1e-7
