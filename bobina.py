@@ -25,8 +25,8 @@ def campo_magnetico(material, N, V, r, L):
 # L = Longitud de la bobina
 
 N = 230
-V = 6.5
+V = 25.37
 r = 8.5e-2
 L = 28.5e-2
 
-print(campo_magnetico(cobre, N, V, r, L))
+# print(campo_magnetico(cobre, N, V, r, L))
